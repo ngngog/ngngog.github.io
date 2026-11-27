@@ -1,0 +1,61 @@
+# Butterfly 主题配置（覆盖主题默认值）
+# 完整可选项见 node_modules/hexo-theme-butterfly/_config.yml
+
+# --- 导航栏 ---
+menu:
+  主页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+
+nav:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+# --- 代码高亮主题 ---
+highlight_theme: mac
+
+# --- 深色模式 ---
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 2
+
+# --- 首屏打字机效果 ---
+subtitle:
+  enable: true
+  effect: true
+  loop: true
+  source: false
+  sub:
+    - 欢迎来到我的博客
+    - 记录技术与生活
+
+# --- 本地搜索（依赖 hexo-generator-searchdb）---
+search:
+  use: local
+  local_search:
+    preload: false
+    top_n_per_article: 1
+    unescape: false
+
+# --- 图片懒加载 ---
+lazyload:
+  enable: true
+  field: site
+
+# --- 字数统计（依赖 hexo-wordcount）---
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# --- 页脚 ---
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
