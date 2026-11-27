@@ -105,7 +105,7 @@ npm install
 
 站点结构就齐了。顺带一提，`hexo generate` 和 `hexo server` 都正常，只有 `init` 会踩这个坑。
 
-还有个衍生坑：**不要在博客目录的子目录里再执行 `hexo init`**。Hexo 会向上逐级找 `_config.yml`，找到父目录的配置后就会判定「目标目录不是空的」直接报错。
+还有个衍生坑：不要在博客目录的子目录里再执行 `hexo init`。Hexo 会向上逐级找 `_config.yml`，找到父目录的配置后就会判定「目标目录不是空的」直接报错。
 
 ## 坑三：换了 Butterfly 主题，页面白屏或报错
 
@@ -173,7 +173,7 @@ git push
 
 工作流文件放在 `.github/workflows/pages.yml`，核心就几行：检出代码 → 装 Node → `npm install` → `npx hexo generate` → 上传 `public` 作为 Pages 产物。
 
-**务必记得 `.gitignore`**，不然 `node_modules` 会被一起提交，仓库瞬间几百兆：
+务必记得 `.gitignore`，不然 `node_modules` 会被一起提交，仓库瞬间几百兆：
 
 ```
 node_modules/
