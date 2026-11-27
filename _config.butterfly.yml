@@ -32,9 +32,14 @@ subtitle:
     - 欢迎来到我的博客
     - 记录技术与生活
 
+# --- 社交图标（右下角 Follow Me 按钮）---
+social:
+  fab fa-github: https://github.com/ngngog || Github || '#24292e'
+
 # --- 本地搜索（依赖 hexo-generator-searchdb）---
 search:
-  use: local
+  use: local_search
+  placeholder: 搜索文章
   local_search:
     preload: false
     top_n_per_article: 1
