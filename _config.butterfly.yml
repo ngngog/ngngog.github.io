@@ -13,8 +13,12 @@ nav:
   display_post_title: true
   fixed: false
 
-# --- 代码高亮主题 ---
-highlight_theme: mac
+# --- 代码块样式 ---
+code_blocks:
+  theme: light          # darker / pale night / light / ocean / false
+  macStyle: true        # 仿 macOS 的红黄绿圆点
+  copy: true            # 复制按钮
+  language: true        # 显示语言标签
 
 # --- 深色模式 ---
 darkmode:
